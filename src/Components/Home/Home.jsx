@@ -1,9 +1,10 @@
 import React from 'react'
+import './Home.css';
 
 function Home() {
   return (
-    <div>
-      Hi This is Home Page of this site
+    <div className='HomeClass'>
+      HI This is Home Component
     </div>
   )
 }
