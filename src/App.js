@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import ReactDOM from "react-dom/client";
+// import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
@@ -11,18 +11,17 @@ import ContactMe from './Components/ContactMe/ContactMe';
 
 function App() {
   return (
-    <>
     <BrowserRouter>
-    <Navbar/>
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
+        <Route path='/home' element={<Home/>}></Route>
         <Route path='toolsTechnologies' element={<ToolsTechnologies/>}></Route>
         <Route path='projects' element={<Projects/>}></Route>
         <Route path='aboutMe' element={<AboutMe/>}></Route>
         <Route path='contactMe' element={<ContactMe/>}></Route>
       </Routes>
-      </BrowserRouter>
-    </>
+    </BrowserRouter>
   );
 }
 
